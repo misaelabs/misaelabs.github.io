@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon" />
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Digital artwork portfolio by Misael" name="description">
@@ -15,171 +16,176 @@
 
 <body>
 
-<header id="headerNav">
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <img alt="Misael's Lab" src="img/logo.png">
+    <header id="headerNav">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img alt="Misael's Lab" src="img/logo.png">
+                </div>
+                <div id="navicon" onclick="toggleMenu()"></div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">DASHBOARD</a></li>
+                    <li><a class="active" href="artworks.html">ARTWORKS</a></li>
+                    <li><a href="devlog.html">DEV LOG</a></li>
+                    <li><a href="privacy.html">PRIVACY POLICY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="inner-hero">
+        <div class="inner-hero-bg"></div>
+        <div class="container">
+            <div class="inner-hero-title">Artwork Gallery</div>
+            <div class="inner-hero-desc">
+                Digital illustrations, concept art, fan art, and creative experiments.
             </div>
-            <div id="navicon" onclick="toggleMenu()"></div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">DASHBOARD</a></li>
-                <li><a class="active" href="artworks.html">ARTWORKS</a></li>
-                <li><a href="devlog.html">DEV LOG</a></li>
-                <li><a href="privacy.html">PRIVACY POLICY</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<div class="inner-hero">
-    <div class="inner-hero-bg"></div>
-    <div class="container">
-        <div class="inner-hero-title">Artwork Gallery</div>
-        <div class="inner-hero-desc">
-            Digital illustrations, concept art, fan art, and creative experiments.
         </div>
     </div>
-</div>
 
-<section class="content-section">
-    <div class="container">
+    <section class="content-section">
+        <div class="container">
 
-        <div class="content-block">
-            <h2>Digital Art Collection</h2>
-            <p>
-                Showcase of my digital artworks. Add new entries only inside the
-                artworks array below and the gallery will update automatically.
-            </p>
+            <div class="content-block">
+                <h2>Digital Art Collection</h2>
+                <p>
+                    Showcase of my digital artworks. Add new entries only inside the
+                    artworks array below and the gallery will update automatically.
+                </p>
+            </div>
+
+            <div class="artwork-grid" id="artworkGallery"></div>
+
         </div>
+    </section>
 
-        <div class="artwork-grid" id="artworkGallery"></div>
-
+    <div class="lightbox" id="lightbox">
+        <img id="lightboxImage" src="">
     </div>
-</section>
 
-<div class="lightbox" id="lightbox">
-    <img id="lightboxImage" src="">
-</div>
-
-<footer>
-    <p>Copyright &copy; <span id="curyear"></span> Misael's App. All Rights Reserved.</p>
-</footer>
+    <footer>
+        <p>Copyright &copy; <span id="curyear"></span> Misael's App. All Rights Reserved.</p>
+    </footer>
 
 
-<script>
-    document.getElementById('curyear').textContent = new Date().getFullYear();
+    <script>
+        document.getElementById('curyear').textContent = new Date().getFullYear();
 
-    function toggleMenu() {
-        document.getElementById('navLinks').classList.toggle('open');
-    }
-
-    window.addEventListener('scroll', () => {
-        const nav = document.getElementById('headerNav');
-        nav.style.background =
-            window.scrollY > 60
-                ? 'rgba(10,10,15,0.95)'
-                : 'rgba(10,10,15,0.75)';
-    });
-
-    const artworks = [
-        {
-            file: "1.jpg",
-            title: "Witch Character",
-            category: "3D Art"
-        },
-        {
-            file: "2.jpg",
-            title: "Teacher Desk",
-            category: "2D Illustration"
-        },
-        {
-            file: "3.jpg",
-            title: "Demon Wings Lineart",
-            category: "Lineart"
-        },
-        {
-            file: "4.jpg",
-            title: "Fighter Character Sheet",
-            category: "Character Design"
-        },
-        {
-            file: "5.jpg",
-            title: "Dark Tentacle Villain",
-            category: "2D Illustration"
-        },
-        {
-            file: "6.jpg",
-            title: "ARES TYPE-00 Mech Sheet",
-            category: "Concept Art"
-        },
-        {
-            file: "7.jpg",
-            title: "Office Worker",
-            category: "2D Illustration"
-        },
-        {
-            file: "8.jpg",
-            title: "Forest Fairy",
-            category: "2D Illustration"
-        },
-        {
-            file: "9.jpg",
-            title: "Duo Character Sketch",
-            category: "Lineart"
-        },
-        {
-            file: "10.jpg",
-            title: "Spider Arachne",
-            category: "2D Illustration"
-        },
-        {
-            file: "11.jpg",
-            title: "The Lost Village - Mirror Scene",
-            category: "Game Art"
-        },
-        {
-            file: "12.jpg",
-            title: "The Lost Village - Key Visual",
-            category: "Game Wallpaper"
-        },
-        {
-            file: "13.jpg",
-            title: "Mecha Dragon",
-            category: "3D Art"
-        },
-        {
-            file: "14.jpg",
-            title: "Super Mario Girl",
-            category: "Fan Art"
-        },
-        {
-            file: "15.png",
-            title: "Drone",
-            category: "3D Art"
-        },
-        {
-            file: "16.png",
-            title: "Sword",
-            category: "3D Art"
-        },
-        {
-            file: "17.png",
-            title: "Rifle",
-            category: "3D Art"
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('open');
         }
-    ];
-    const gallery = document.getElementById("artworkGallery");
 
-    artworks
-        .slice()
-        .reverse()
-        .forEach(art => {
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('headerNav');
+            nav.style.background =
+                window.scrollY > 60
+                    ? 'rgba(10,10,15,0.95)'
+                    : 'rgba(10,10,15,0.75)';
+        });
 
-            gallery.insertAdjacentHTML(
-                "beforeend",
-                `
+        const artworks = [
+            {
+                file: "1.jpg",
+                title: "Witch Character",
+                category: "3D Art"
+            },
+            {
+                file: "2.jpg",
+                title: "Teacher Desk",
+                category: "2D Illustration"
+            },
+            {
+                file: "3.jpg",
+                title: "Demon Wings Lineart",
+                category: "Lineart"
+            },
+            {
+                file: "4.jpg",
+                title: "Fighter Character Sheet",
+                category: "Character Design"
+            },
+            {
+                file: "5.jpg",
+                title: "Dark Tentacle Villain",
+                category: "2D Illustration"
+            },
+            {
+                file: "6.jpg",
+                title: "ARES TYPE-00 Mech Sheet",
+                category: "Concept Art"
+            },
+            {
+                file: "7.jpg",
+                title: "Office Worker",
+                category: "2D Illustration"
+            },
+            {
+                file: "8.jpg",
+                title: "Forest Fairy",
+                category: "2D Illustration"
+            },
+            {
+                file: "9.jpg",
+                title: "Duo Character Sketch",
+                category: "Lineart"
+            },
+            {
+                file: "10.jpg",
+                title: "Spider Arachne",
+                category: "2D Illustration"
+            },
+            {
+                file: "11.jpg",
+                title: "The Lost Village - Mirror Scene",
+                category: "Game Art"
+            },
+            {
+                file: "12.jpg",
+                title: "The Lost Village - Key Visual",
+                category: "Game Wallpaper"
+            },
+            {
+                file: "13.jpg",
+                title: "Mecha Dragon",
+                category: "3D Art"
+            },
+            {
+                file: "14.jpg",
+                title: "Super Mario Girl",
+                category: "Fan Art"
+            },
+            {
+                file: "15.png",
+                title: "Drone",
+                category: "3D Art"
+            },
+            {
+                file: "16.png",
+                title: "Sword",
+                category: "3D Art"
+            },
+            {
+                file: "17.png",
+                title: "Photon Reaper AR",
+                category: "3D Art"
+            },
+            {
+                file: "18.png",
+                title: "Zenith AR",
+                category: "3D Art"
+            }
+        ];
+        const gallery = document.getElementById("artworkGallery");
+
+        artworks
+            .slice()
+            .reverse()
+            .forEach(art => {
+
+                gallery.insertAdjacentHTML(
+                    "beforeend",
+                    `
       <div class="artwork-card">
         <img
           src="artworks/${art.file}"
@@ -192,29 +198,30 @@
         </div>
       </div>
       `
-            );
+                );
+
+            });
+
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightboxImage");
+
+        document.addEventListener("click", e => {
+
+            const image = e.target.closest(".artwork-card img");
+
+            if (image) {
+                lightboxImage.src = image.src;
+                lightbox.style.display = "flex";
+            }
 
         });
 
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImage = document.getElementById("lightboxImage");
+        lightbox.addEventListener("click", () => {
+            lightbox.style.display = "none";
+        });
 
-    document.addEventListener("click", e => {
-
-        const image = e.target.closest(".artwork-card img");
-
-        if (image) {
-            lightboxImage.src = image.src;
-            lightbox.style.display = "flex";
-        }
-
-    });
-
-    lightbox.addEventListener("click", () => {
-        lightbox.style.display = "none";
-    });
-
-</script>
+    </script>
 
 </body>
+
 </html>

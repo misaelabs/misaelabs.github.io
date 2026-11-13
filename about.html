@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon"/>
-    <meta content="About Misael" property="og:title"/>
-    <meta content="About Misael's Lab" property="og:description"/>
-    <meta content="Website" property="og:type"/>
-    <meta content="http://misaelsapp.github.io/about.html" property="og:url"/>
-    <meta content="https://misaelsapp.github.io/img/billboard.png" property="og:image"/>
+    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon" />
+    <meta content="About Misael" property="og:title" />
+    <meta content="About Misael's Lab" property="og:description" />
+    <meta content="Website" property="og:type" />
+    <meta content="http://misaelsapp.github.io/about.html" property="og:url" />
+    <meta content="https://misaelsapp.github.io/img/billboard.png" property="og:image" />
     <meta charset="UTF-8">
     <meta content="About Misael and his Lab" name="description">
     <meta content="misael" name="author">
@@ -19,172 +19,188 @@
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
-<header id="headerNav">
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <img alt="Misael's Lab"
-                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"
-                     src="img/logo.png">
-                <span class="logo-text" style="display:none;">MISAEL</span>
+    <!-- ===== NAVBAR ===== -->
+    <header id="headerNav">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img alt="Misael's Lab"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"
+                        src="img/logo.png">
+                    <span class="logo-text" style="display:none;">MISAEL</span>
+                </div>
+                <div id="navicon" onclick="toggleMenu()"></div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">DASHBOARD</a></li>
+                    <li><a href="artworks.html">ARTWORKS</a></li>
+                    <li><a href="devlog.html">DEV LOG</a></li>
+                    <li><a href="privacy.html">PRIVACY POLICY</a></li>
+                    <li><a class="active" href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <div class="inner-hero">
+        <div class="inner-hero-bg"></div>
+        <div class="container">
+            <div class="inner-hero-title">About</div>
+            <div class="inner-hero-desc">Learn more about my background, skills, and creative work.</div>
+        </div>
+    </div>
+
+    <!-- ===== CONTENT ===== -->
+    <section class="content-section">
+        <div class="container">
+
+            <div class="content-block">
+                <h2>About Me</h2>
+
+                <p>
+                    I am an independent software developer and digital creator passionate about building innovative
+                    applications that combine technology, creativity, and practical problem-solving. My work spans
+                    desktop,
+                    mobile, web, and interactive experiences, with a strong focus on rapid prototyping and
+                    experimentation.
+                </p>
+
+                <p>
+                    Over the years, I have worked with technologies such as Unity, .NET, Kotlin, Java, PHP, OpenCV, ML
+                    Kit,
+                    and various AI frameworks to develop applications ranging from games and productivity tools to
+                    computer
+                    vision and AI-powered solutions. I enjoy transforming ideas into functional products that are both
+                    technically solid and enjoyable to use.
+                </p>
+
+                <p>
+                    Beyond software development, I also create digital artwork and 3D content using tools such as
+                    CorelDRAW
+                    and 3ds Max. This combination of technical and creative skills allows me to design complete
+                    experiences,
+                    from application logic and AI systems to visual assets and user interfaces.
+                </p>
             </div>
-            <div id="navicon" onclick="toggleMenu()"></div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">DASHBOARD</a></li>
-                <li><a href="artworks.html">ARTWORKS</a></li>
-                <li><a href="devlog.html">DEV LOG</a></li>
-                <li><a href="privacy.html">PRIVACY POLICY</a></li>
-                <li><a class="active" href="about.html">ABOUT</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
 
-<!-- ===== PAGE HERO ===== -->
-<div class="inner-hero">
-    <div class="inner-hero-bg"></div>
-    <div class="container">
-        <div class="inner-hero-title">About</div>
-        <div class="inner-hero-desc">Learn more about my background, skills, and creative work.</div>
-    </div>
-</div>
+            <div class="content-block" style="margin-top:20px;">
+                <h2>What I Do</h2>
 
-<!-- ===== CONTENT ===== -->
-<section class="content-section">
-    <div class="container">
+                <p>
+                    My work revolves around turning ideas into working products through rapid development, iterative
+                    testing, and creative problem-solving. Areas I frequently work on include:
+                </p>
 
-        <div class="content-block">
-            <h2>About Me</h2>
+                <ul>
+                    <li>
+                        <strong>Application Development:</strong>
+                        Building desktop, mobile, and web applications using modern technologies and development
+                        frameworks.
+                    </li>
 
-            <p>
-                I am an independent software developer and digital creator passionate about building innovative
-                applications that combine technology, creativity, and practical problem-solving. My work spans desktop,
-                mobile, web, and interactive experiences, with a strong focus on rapid prototyping and experimentation.
-            </p>
+                    <li>
+                        <strong>Game Development:</strong>
+                        Creating interactive experiences, gameplay systems, tools, and prototypes using Unity and
+                        related
+                        technologies.
+                    </li>
 
-            <p>
-                Over the years, I have worked with technologies such as Unity, .NET, Kotlin, Java, PHP, OpenCV, ML Kit,
-                and various AI frameworks to develop applications ranging from games and productivity tools to computer
-                vision and AI-powered solutions. I enjoy transforming ideas into functional products that are both
-                technically solid and enjoyable to use.
-            </p>
+                    <li>
+                        <strong>Artificial Intelligence:</strong>
+                        Developing AI-powered features such as intelligent assistants, machine learning solutions,
+                        text-to-speech systems, and automation tools.
+                    </li>
 
-            <p>
-                Beyond software development, I also create digital artwork and 3D content using tools such as CorelDRAW
-                and 3ds Max. This combination of technical and creative skills allows me to design complete experiences,
-                from application logic and AI systems to visual assets and user interfaces.
-            </p>
-        </div>
+                    <li>
+                        <strong>Computer Vision:</strong>
+                        Exploring image processing, object recognition, visual analysis, and camera-based applications
+                        using
+                        OpenCV and ML Kit.
+                    </li>
 
-        <div class="content-block" style="margin-top:20px;">
-            <h2>What I Do</h2>
+                    <li>
+                        <strong>Digital Art & 3D Content:</strong>
+                        Designing visual assets, illustrations, user interface elements, and 3D models that enhance
+                        software
+                        and interactive experiences.
+                    </li>
 
-            <p>
-                My work revolves around turning ideas into working products through rapid development, iterative
-                testing, and creative problem-solving. Areas I frequently work on include:
-            </p>
+                    <li>
+                        <strong>Rapid Prototyping:</strong>
+                        Quickly transforming concepts into functional prototypes for testing, validation, and continuous
+                        improvement.
+                    </li>
+                </ul>
 
-            <ul>
-                <li>
-                    <strong>Application Development:</strong>
-                    Building desktop, mobile, and web applications using modern technologies and development frameworks.
-                </li>
-
-                <li>
-                    <strong>Game Development:</strong>
-                    Creating interactive experiences, gameplay systems, tools, and prototypes using Unity and related
-                    technologies.
-                </li>
-
-                <li>
-                    <strong>Artificial Intelligence:</strong>
-                    Developing AI-powered features such as intelligent assistants, machine learning solutions,
-                    text-to-speech systems, and automation tools.
-                </li>
-
-                <li>
-                    <strong>Computer Vision:</strong>
-                    Exploring image processing, object recognition, visual analysis, and camera-based applications using
-                    OpenCV and ML Kit.
-                </li>
-
-                <li>
-                    <strong>Digital Art & 3D Content:</strong>
-                    Designing visual assets, illustrations, user interface elements, and 3D models that enhance software
-                    and interactive experiences.
-                </li>
-
-                <li>
-                    <strong>Rapid Prototyping:</strong>
-                    Quickly transforming concepts into functional prototypes for testing, validation, and continuous
-                    improvement.
-                </li>
-            </ul>
-
-            <p>
-                I enjoy experimenting with emerging technologies and combining multiple disciplines to create solutions
-                that are innovative, practical, and visually engaging.
-            </p>
-        </div>
-
-        <div class="content-block" style="margin-top:20px;">
-            <h2>My Mission</h2>
-
-            <p>
-                My mission is to bridge technology and creativity by developing applications that solve real-world
-                problems while delivering engaging user experiences. I believe that great software is not only
-                functional, it should also be intuitive, visually appealing, and capable of creating meaningful value
-                for its users.
-            </p>
-
-            <p>
-                Through continuous learning and experimentation, I strive to stay at the forefront of software
-                development, artificial intelligence, and digital content creation. Every project is an opportunity to
-                explore new ideas, challenge technical limitations, and transform concepts into reality.
-            </p>
-
-            <p>
-                Ultimately, my goal is to build products and experiences that inspire curiosity, improve productivity,
-                and demonstrate how technology can be used creatively to make a positive impact.
-            </p>
-        </div>
-
-        <div class="content-block" style="margin-top:20px;">
-            <h2>Contact Me</h2>
-            <p>If you're passionate about technology and want to collaborate on a project, discuss innovative ideas, or
-                simply learn more about my work. I'd love to hear from you.</p>
-            <div class="contact-links">
-                <a class="contact-card" href="https://fastwork.id/user/misael" target="_blank">
-                    <i class="fas fa-briefcase"></i> Fastwork
-                </a>
-                <a class="contact-card" href="https://www.fiverr.com/misaeltechart" target="_blank">
-                    <i class="fas fa-paint-brush"></i> Fiverr
-                </a>
+                <p>
+                    I enjoy experimenting with emerging technologies and combining multiple disciplines to create
+                    solutions
+                    that are innovative, practical, and visually engaging.
+                </p>
             </div>
+
+            <div class="content-block" style="margin-top:20px;">
+                <h2>My Mission</h2>
+
+                <p>
+                    My mission is to bridge technology and creativity by developing applications that solve real-world
+                    problems while delivering engaging user experiences. I believe that great software is not only
+                    functional, it should also be intuitive, visually appealing, and capable of creating meaningful
+                    value
+                    for its users.
+                </p>
+
+                <p>
+                    Through continuous learning and experimentation, I strive to stay at the forefront of software
+                    development, artificial intelligence, and digital content creation. Every project is an opportunity
+                    to
+                    explore new ideas, challenge technical limitations, and transform concepts into reality.
+                </p>
+
+                <p>
+                    Ultimately, my goal is to build products and experiences that inspire curiosity, improve
+                    productivity,
+                    and demonstrate how technology can be used creatively to make a positive impact.
+                </p>
+            </div>
+
+            <div class="content-block" style="margin-top:20px;">
+                <h2>Contact Me</h2>
+                <p>If you're passionate about technology and want to collaborate on a project, discuss innovative ideas,
+                    or
+                    simply learn more about my work. I'd love to hear from you.</p>
+                <div class="contact-links">
+                    <a class="contact-card" href="https://fastwork.id/user/misael" target="_blank">
+                        <i class="fas fa-briefcase"></i> Fastwork
+                    </a>
+                    <a class="contact-card" href="https://www.fiverr.com/misaeltechart" target="_blank">
+                        <i class="fas fa-paint-brush"></i> Fiverr
+                    </a>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
+    <footer>
+        <p>Copyright &copy; <span id="curyear"></span> Misael's App. All Rights Reserved.</p>
+    </footer>
 
-<footer>
-    <p>Copyright &copy; <span id="curyear"></span> Misael's App. All Rights Reserved.</p>
-</footer>
+    <script>
+        document.getElementById('curyear').textContent = new Date().getFullYear();
 
-<script>
-    document.getElementById('curyear').textContent = new Date().getFullYear();
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
 
-    function toggleMenu() {
-        document.getElementById('navLinks').classList.toggle('open');
-    }
-
-    window.addEventListener('scroll', () => {
-        const nav = document.getElementById('headerNav');
-        nav.style.background = window.scrollY > 60
-            ? 'rgba(10, 10, 15, 0.95)'
-            : 'rgba(10, 10, 15, 0.75)';
-    });
-</script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('headerNav');
+            nav.style.background = window.scrollY > 60
+                ? 'rgba(10, 10, 15, 0.95)'
+                : 'rgba(10, 10, 15, 0.75)';
+        });
+    </script>
 
 </body>
+
 </html>
